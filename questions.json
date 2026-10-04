@@ -6494,11 +6494,12 @@
   "type": "volumes",
   "case": "An 8-year-old has a craniopharyngioma after subtotal resection with a residual cyst.",
   "question": "What is your radiation plan, and what is unique about treatment?",
-  "answer": "54 Gy in 30 fractions. GTV is residual disease and the deflated cyst on MRI, CTV plus 1 to 2 cm per the sheet, PTV 3 to 5 mm. Do weekly MRI during treatment because the cyst can grow and require replanning. For BRAF V600E mutant tumors, try vemurafenib and cobimetinib before surgery or RT.",
+  "answer": "54 Gy in 30 fractions. GTV is residual disease including the cyst wall on MRI and CT. CTV is GTV plus 0.5 cm if you can get MRIs every 1 to 2 weeks during treatment, or plus 1 cm if not. PTV 3 to 5 mm. Image during treatment because the cyst can grow and require drainage or replanning. For BRAF V600E mutant tumors, try vemurafenib and cobimetinib before surgery or RT.",
   "key_points": [
    "54 Gy in 30",
-   "residual plus deflated cyst",
-   "weekly MRI, cyst can grow",
+   "residual plus cyst wall",
+   "CTV 0.5 cm with MRI every 1-2 weeks, else 1 cm",
+   "cyst can grow, image during RT",
    "BRAF V600E targeted therapy"
   ],
   "keywords": [
@@ -6511,9 +6512,17 @@
     "residual"
    ],
    [
-    "weekly mri",
+    "0.5",
+    "5 mm",
+    "1 cm",
+    "one centimeter"
+   ],
+   [
+    "every 1 to 2",
+    "weekly",
     "cyst growth",
-    "replan"
+    "replan",
+    "grow"
    ],
    [
     "braf",
@@ -6521,7 +6530,7 @@
     "cobimetinib"
    ]
   ],
-  "source": "APS Boards Condensed (spreadsheet), Pediatrics row: Craniopharyngioma",
+  "source": "APS Boards Condensed (spreadsheet), Pediatrics row: Craniopharyngioma; CTV margin from the CNS/Peds review (2026)",
   "edition": "",
   "flag": ""
  },
@@ -9384,7 +9393,7 @@
   ],
   "source": "CNS/Peds mock oral boards review (March 2026)",
   "edition": "",
-  "flag": "Differs slightly from an older note (peds-5), which says LP at 10 to 14 days; this review says at least 14 days."
+  "flag": ""
  },
  {
   "id": "cp26-3",
@@ -9610,12 +9619,12 @@
   "type": "volumes",
   "case": "A skeletally immature child needs craniospinal irradiation for medulloblastoma.",
   "question": "Is vertebral body sparing acceptable?",
-  "answer": "The CSI CTV is the whole CSF space. Vertebral body sparing is allowed on the current COG trials ACNS2021 and ACNS2031. In the MSKCC and ProCure proton series of children aged 3 to 5, vertebral sparing gave less loss of vertebral height with similar spinal curvature, and much lower dose to the lungs, heart, esophagus, kidneys, bowel and ovaries. Traditionally the whole vertebral body was covered to avoid asymmetric growth, so say which approach you use and why.",
+  "answer": "The CSI CTV is the whole CSF space. In a child who is not skeletally mature, cover the whole vertebral body to at least 18 Gy to avoid asymmetric growth. Vertebral body sparing is reserved for patients who have reached skeletal maturity.",
   "key_points": [
    "CTV is the whole CSF space",
-   "Allowed on ACNS2021 and ACNS2031",
-   "Less vertebral height loss",
-   "Lower dose to normal tissue"
+   "Not skeletally mature: cover whole vertebral body",
+   "At least 18 Gy",
+   "Sparing only after skeletal maturity"
   ],
   "keywords": [
    [
@@ -9624,24 +9633,21 @@
     "cerebrospinal fluid"
    ],
    [
-    "2021",
-    "2031",
-    "allowed"
+    "whole vertebral body",
+    "entire vertebral body"
    ],
    [
-    "height",
-    "growth"
+    "18",
+    "eighteen"
    ],
    [
-    "normal tissue",
-    "lung",
-    "heart",
-    "ovar"
+    "skeletal maturity",
+    "skeletally mature"
    ]
   ],
-  "source": "DeCesaris, Pediatrics review didactic",
+  "source": "APS Boards Condensed (spreadsheet), Pediatrics row: Medulloblastoma, Average Risk",
   "edition": "",
-  "flag": "Differs from the APS sheet item (aps-peds-24), which says to cover the whole vertebral body if not skeletally mature."
+  "flag": ""
  },
  {
   "id": "cp26-10",
@@ -10899,7 +10905,7 @@
   ],
   "source": "CNS/Peds mock oral boards review (March 2026)",
   "edition": "",
-  "flag": "The APS sheet item (aps-peds-32) gives a 1 to 2 cm CTV; this review uses 0.5 to 1 cm based on imaging frequency."
+  "flag": ""
  },
  {
   "id": "cp26-43",
@@ -13447,10 +13453,10 @@
   "type": "management",
   "case": "Same 7-year-old with average risk medulloblastoma after near-total resection.",
   "question": "What is your recommended management, including timing of studies?",
-  "answer": "Postop MRI brain within 24 to 72 hours and lumbar puncture 10 to 14 days after surgery, after the spine MRI. Then craniospinal irradiation with a posterior fossa or involved-field boost and concurrent weekly vincristine, followed by maintenance chemo with cisplatin, vincristine, CCNU and cyclophosphamide.",
+  "answer": "Postop MRI brain within 24 to 72 hours, spine MRI about 10 to 14 days after surgery if not done before, and lumbar puncture at least 14 days after surgery to avoid false positive cytology. Then craniospinal irradiation with a posterior fossa or involved-field boost and concurrent weekly vincristine, followed by maintenance chemo with cisplatin, vincristine, CCNU and cyclophosphamide.",
   "key_points": [
    "Postop MRI within 24-72 hours",
-   "LP at 10-14 days",
+   "LP at least 14 days after surgery",
    "Craniospinal irradiation with boost",
    "Concurrent weekly vincristine",
    "Adjuvant cisplatin-based chemo"
@@ -13463,9 +13469,8 @@
     "24-72"
    ],
    [
-    "10 to 14",
-    "ten to fourteen",
-    "10-14",
+    "14 days",
+    "fourteen days",
     "two weeks",
     "lumbar"
    ],

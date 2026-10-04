@@ -1,5 +1,5 @@
 // Offline cache. Change VERSION whenever index.html or questions.json changes so phones pick up updates.
-const VERSION = "3d18ec29f4";
+const VERSION = "f2264992fd";
 const CORE = ["./", "index.html", "questions.json", "manifest.webmanifest", "icon.svg", "icon-180.png", "icon-192.png", "icon-512.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== VERSION).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
