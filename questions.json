@@ -9307,6 +9307,1639 @@
   "flag": ""
  },
  {
+  "id": "cp26-1",
+  "site": "Pediatrics",
+  "type": "workup",
+  "case": "A 4-year-old girl has had ataxia, nausea and vomiting for 1 week.",
+  "question": "What is your workup, and which inherited syndromes do you ask about?",
+  "answer": "History and exam, CBC and CMP, and MRI of the brain and whole spine with and without contrast, ideally before surgery. Ask about Li-Fraumeni from germline TP53, with a family history of breast cancer, sarcoma, leukemia, choroid plexus carcinoma and adrenocortical carcinoma. Ask about Gorlin syndrome from PTCH1 or SUFU, with multiple basal cell carcinomas and skeletal anomalies. Ask about Turcot or Lynch syndrome from APC or mismatch repair genes, with colon cancer and high-grade gliomas.",
+  "key_points": [
+   "MRI brain and spine with and without contrast",
+   "Li-Fraumeni, TP53",
+   "Gorlin, PTCH1 or SUFU",
+   "Turcot or Lynch"
+  ],
+  "keywords": [
+   [
+    "mri brain",
+    "spine",
+    "neuraxis"
+   ],
+   [
+    "li-fraumeni",
+    "li fraumeni",
+    "tp53",
+    "p53"
+   ],
+   [
+    "gorlin",
+    "ptch",
+    "sufu"
+   ],
+   [
+    "turcot",
+    "lynch",
+    "apc",
+    "mismatch"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-2",
+  "site": "Pediatrics",
+  "type": "workup",
+  "case": "The child with a fourth ventricle mass has a gross total resection.",
+  "question": "When do you get the postoperative MRI brain, spine MRI and lumbar puncture, and why?",
+  "answer": "MRI brain within 24 to 72 hours of surgery. MRI spine about 10 to 14 days after surgery if it was not done before surgery. Lumbar puncture for CSF cytology at least 14 days after surgery, to avoid a false positive from surgical debris.",
+  "key_points": [
+   "MRI brain within 24 to 72 hours",
+   "Spine MRI 10 to 14 days if not done preop",
+   "LP at least 14 days after surgery",
+   "Avoids false positive cytology"
+  ],
+  "keywords": [
+   [
+    "24 to 72",
+    "72 hours",
+    "24-72",
+    "seventy two"
+   ],
+   [
+    "10 to 14",
+    "ten to fourteen",
+    "10-14"
+   ],
+   [
+    "14 days",
+    "fourteen days",
+    "two weeks"
+   ],
+   [
+    "false positive",
+    "false-positive"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": "Differs slightly from an older note (peds-5), which says LP at 10 to 14 days; this review says at least 14 days."
+ },
+ {
+  "id": "cp26-3",
+  "site": "Pediatrics",
+  "type": "workup",
+  "case": "Pathology from a posterior fossa tumor shows tumor cells arranged around a central area of fibrillary neuropil.",
+  "question": "What is this finding, and which tumors have it?",
+  "answer": "Homer-Wright rosettes: tumor cells surrounding a central neuropil of neurofibrillary processes. They are seen in medulloblastoma, PNETs, olfactory neuroblastoma and pineoblastoma. A posterior fossa tumor with Homer-Wright rosettes is nearly pathognomonic for medulloblastoma.",
+  "key_points": [
+   "Homer-Wright rosettes",
+   "Medulloblastoma",
+   "Also PNET, olfactory neuroblastoma, pineoblastoma"
+  ],
+  "keywords": [
+   [
+    "homer wright",
+    "homer-wright"
+   ],
+   [
+    "medulloblastoma"
+   ],
+   [
+    "pnet",
+    "olfactory",
+    "esthesioneuroblastoma",
+    "pineoblastoma"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-4",
+  "site": "Pediatrics",
+  "type": "staging",
+  "case": "Final pathology after gross total resection of a medulloblastoma shows diffuse anaplasia. Spine MRI and CSF are negative.",
+  "question": "What risk group is this, and what features define high risk?",
+  "answer": "High risk, because of diffuse anaplasia. High risk features are residual disease over 1.5 square centimeters or M positive disease, diffuse anaplasia or large cell histology, SHH with MYCN amplification, TP53 mutation, abnormal GLI2 or loss of 14q, Group 3 with MYC amplification or isochromosome 17q, and Group 4 without chromosome 11 loss. Average risk is residual 1.5 square centimeters or less, M0, classic or desmoplastic nodular histology and no diffuse anaplasia.",
+  "key_points": [
+   "High risk",
+   "Residual over 1.5 cm squared or M+",
+   "Diffuse anaplasia or large cell",
+   "Molecular: MYCN, TP53, MYC, i17q"
+  ],
+  "keywords": [
+   [
+    "high risk",
+    "high-risk"
+   ],
+   [
+    "1.5",
+    "one point five",
+    "m+",
+    "metastatic"
+   ],
+   [
+    "anaplas",
+    "large cell"
+   ],
+   [
+    "mycn",
+    "tp53",
+    "p53",
+    "myc",
+    "17q"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-5",
+  "site": "Pediatrics",
+  "type": "management",
+  "case": "A child has medulloblastoma after resection.",
+  "question": "What chemotherapy goes with radiation for average risk versus high risk disease?",
+  "answer": "Average risk: weekly vincristine during radiation, then maintenance cisplatin, vincristine, and either lomustine on COG protocols or cyclophosphamide on St. Jude protocols. High risk: weekly vincristine during radiation, plus carboplatin for Group 3, then maintenance cisplatin, vincristine and cyclophosphamide.",
+  "key_points": [
+   "Weekly vincristine during RT",
+   "Maintenance cisplatin-based",
+   "Lomustine (COG) or cyclophosphamide (St. Jude)",
+   "Carboplatin with RT for high risk Group 3"
+  ],
+  "keywords": [
+   [
+    "vincristine"
+   ],
+   [
+    "cisplatin"
+   ],
+   [
+    "lomustine",
+    "ccnu",
+    "cyclophosphamide"
+   ],
+   [
+    "carboplatin",
+    "carbo"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-6",
+  "site": "Pediatrics",
+  "type": "volumes",
+  "case": "You are about to simulate a young child for craniospinal irradiation.",
+  "question": "How do you simulate the patient?",
+  "answer": "Follow institutional standards. One approach is supine, head first, arms on the chest, 5-point aquaplast face mask and vac-lok. Scan from the vertex to the distal femur with slices of 3 mm or less, and coordinate with pediatric anesthesia.",
+  "key_points": [
+   "Supine with 5-point mask and vac-lok",
+   "Scan vertex to distal femur",
+   "3 mm or thinner slices",
+   "Pediatric anesthesia"
+  ],
+  "keywords": [
+   [
+    "mask",
+    "aquaplast",
+    "vac",
+    "supine"
+   ],
+   [
+    "vertex",
+    "femur"
+   ],
+   [
+    "3 mm",
+    "three millimeter",
+    "3mm"
+   ],
+   [
+    "anesthesia",
+    "sedation"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-7",
+  "site": "Pediatrics",
+  "type": "toxicity",
+  "case": "Two days after posterior fossa surgery, a child develops worsening ataxia and cannot speak. Symptoms persist when radiation is due to start.",
+  "question": "What is this, and would you delay radiation?",
+  "answer": "Posterior fossa syndrome, remembered as SAME-R: swallowing difficulty, ataxia, mutism, emotional lability and respiratory failure, sometimes gaze palsy. It occurs in about 25 percent, about 2 days after surgery, and usually improves over 1 to 6 months, though dysarthria and ataxia may persist. Do not delay: start radiation by about day 30 to 35 after surgery, and up to day 42 is acceptable.",
+  "key_points": [
+   "Posterior fossa syndrome",
+   "About 25 percent, improves over months",
+   "Do not delay radiation",
+   "Start by day 30 to 35, up to 42"
+  ],
+  "keywords": [
+   [
+    "posterior fossa syndrome",
+    "cerebellar mutism",
+    "mutism"
+   ],
+   [
+    "25",
+    "twenty five",
+    "months"
+   ],
+   [
+    "not delay",
+    "don't delay",
+    "do not delay",
+    "no delay"
+   ],
+   [
+    "30 to 35",
+    "35",
+    "42",
+    "forty two"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-8",
+  "site": "Pediatrics",
+  "type": "management",
+  "case": "A 3-year-old with average risk medulloblastoma asks about reducing craniospinal dose.",
+  "question": "What did COG ACNS0331 show?",
+  "answer": "ACNS0331 randomized ages 3 to 7 to 18 Gy versus standard 23.4 Gy craniospinal irradiation, and all patients to an involved-field tumor bed boost versus a whole posterior fossa boost. Reduced dose CSI was worse: 5-year EFS 72 versus 83 percent and OS 78 versus 86 percent. The tumor bed boost was as good as the whole posterior fossa boost, with EFS about 82 versus 81 percent. So the standard is 23.4 Gy CSI with a tumor bed boost to 54 Gy.",
+  "key_points": [
+   "18 Gy CSI was worse",
+   "23.4 Gy stays standard",
+   "Tumor bed boost equivalent to whole PF"
+  ],
+  "keywords": [
+   [
+    "18",
+    "eighteen",
+    "worse",
+    "inferior"
+   ],
+   [
+    "23.4",
+    "twenty three point four"
+   ],
+   [
+    "tumor bed",
+    "involved field",
+    "equivalent",
+    "same"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-9",
+  "site": "Pediatrics",
+  "type": "volumes",
+  "case": "A skeletally immature child needs craniospinal irradiation for medulloblastoma.",
+  "question": "Is vertebral body sparing acceptable?",
+  "answer": "The CSI CTV is the whole CSF space. Vertebral body sparing is allowed on the current COG trials ACNS2021 and ACNS2031. In the MSKCC and ProCure proton series of children aged 3 to 5, vertebral sparing gave less loss of vertebral height with similar spinal curvature, and much lower dose to the lungs, heart, esophagus, kidneys, bowel and ovaries. Traditionally the whole vertebral body was covered to avoid asymmetric growth, so say which approach you use and why.",
+  "key_points": [
+   "CTV is the whole CSF space",
+   "Allowed on ACNS2021 and ACNS2031",
+   "Less vertebral height loss",
+   "Lower dose to normal tissue"
+  ],
+  "keywords": [
+   [
+    "csf",
+    "thecal sac",
+    "cerebrospinal fluid"
+   ],
+   [
+    "2021",
+    "2031",
+    "allowed"
+   ],
+   [
+    "height",
+    "growth"
+   ],
+   [
+    "normal tissue",
+    "lung",
+    "heart",
+    "ovar"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": "Differs from the APS sheet item (aps-peds-24), which says to cover the whole vertebral body if not skeletally mature."
+ },
+ {
+  "id": "cp26-10",
+  "site": "Pediatrics",
+  "type": "workup",
+  "case": "A 4-year-old girl has a 5 cm nasopharyngeal mass. Biopsy is pending.",
+  "question": "How do you work up this patient?",
+  "answer": "History and exam, CBC, CMP with liver and renal function, and urinalysis. CT chest, CT or ultrasound of the liver, CT or MRI of the primary, and PET/CT. MRI brain and spine plus lumbar puncture because the primary is parameningeal. Echocardiogram before chemotherapy. Open biopsy is preferred; FOXO1 fusion means alveolar and no fusion means embryonal. Bone marrow biopsy if node positive, unfavorable histology, T2 or higher embryonal, or a positive chest CT. Add cystoscopy and exam under anesthesia for GU sites, and RPLND for paratesticular primaries in boys over 10.",
+  "key_points": [
+   "CT chest and PET/CT",
+   "MRI brain and spine and LP for parameningeal",
+   "Biopsy with FOXO1 status",
+   "Bone marrow biopsy",
+   "Echo before chemo"
+  ],
+  "keywords": [
+   [
+    "ct chest",
+    "pet"
+   ],
+   [
+    "lumbar puncture",
+    "lp",
+    "csf",
+    "spine"
+   ],
+   [
+    "foxo",
+    "fusion",
+    "biopsy"
+   ],
+   [
+    "bone marrow",
+    "marrow"
+   ],
+   [
+    "echo",
+    "echocardiogram"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-11",
+  "site": "Pediatrics",
+  "type": "staging",
+  "case": "A child has newly diagnosed rhabdomyosarcoma.",
+  "question": "How do you assign pretreatment TNM stage, and what are the 5-year survivals?",
+  "answer": "T1 is confined to the site of origin and T2 extends beyond it; a is 5 cm or less and b is over 5 cm. Stage 1 is a favorable site with any T or N and M0, about 90 percent. Stage 2 is an unfavorable site, 5 cm or less and N0, about 85 percent. Stage 3 is an unfavorable site over 5 cm or N1, about 70 percent. Stage 4 is M1, about 30 percent.",
+  "key_points": [
+   "Stage 1: favorable site",
+   "Stage 2: unfavorable, 5 cm or less, N0",
+   "Stage 3: unfavorable, over 5 cm or N1",
+   "Stage 4: M1"
+  ],
+  "keywords": [
+   [
+    "favorable"
+   ],
+   [
+    "5 cm or less",
+    "five centimeters or less",
+    "n0"
+   ],
+   [
+    "over 5",
+    "more than 5",
+    "greater than 5",
+    "n1"
+   ],
+   [
+    "m1",
+    "metasta"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-12",
+  "site": "Pediatrics",
+  "type": "staging",
+  "case": "You are staging a rhabdomyosarcoma.",
+  "question": "Which sites are favorable, and which head and neck sites are parameningeal?",
+  "answer": "Favorable sites, BONG: biliary, orbit, non-parameningeal head and neck, and GU other than bladder and prostate. Every other site is unfavorable. Parameningeal sites, IMMNNPP: infratemporal fossa, mastoid, middle ear, nasopharynx, nasal cavity and paranasal sinuses, pterygopalatine fossa and parapharyngeal space.",
+  "key_points": [
+   "Biliary and orbit",
+   "Non-parameningeal head and neck",
+   "GU except bladder and prostate",
+   "Parameningeal: nasopharynx, nasal cavity, middle ear, infratemporal"
+  ],
+  "keywords": [
+   [
+    "biliary",
+    "orbit"
+   ],
+   [
+    "non-parameningeal",
+    "non parameningeal",
+    "not parameningeal"
+   ],
+   [
+    "gu",
+    "genitourinary",
+    "paratesticular",
+    "vagina"
+   ],
+   [
+    "nasopharynx",
+    "nasal",
+    "middle ear",
+    "infratemporal",
+    "pterygopalatine",
+    "parapharyngeal",
+    "mastoid"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-13",
+  "site": "Pediatrics",
+  "type": "staging",
+  "case": "A 4-year-old has a 5 cm embryonal rhabdomyosarcoma of the nasopharynx, FOXO1 fusion negative, N0 M0. The tumor board deems it unresectable.",
+  "question": "What is the stage, group and risk?",
+  "answer": "Stage 2, because the nasopharynx is an unfavorable parameningeal site and the tumor is 5 cm or less and N0. Clinical Group III, because there is gross residual disease after biopsy only. That makes it intermediate risk. Low risk is embryonal stage 1 to 2 group I to II, or embryonal orbit group III. High risk is metastatic disease outside the embryonal under-10 exception.",
+  "key_points": [
+   "Stage 2",
+   "Group III",
+   "Intermediate risk"
+  ],
+  "keywords": [
+   [
+    "stage 2",
+    "stage two",
+    "stage ii"
+   ],
+   [
+    "group 3",
+    "group three",
+    "group iii"
+   ],
+   [
+    "intermediate"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-14",
+  "site": "Pediatrics",
+  "type": "staging",
+  "case": "An 11-year-old girl has left maxillary swelling. Workup shows a 6 cm alveolar rhabdomyosarcoma of the parameningeal region, biopsy only, N0 M0.",
+  "question": "What is the stage, group and risk?",
+  "answer": "Stage 3, because it is an unfavorable parameningeal site over 5 cm. Group III, because only a biopsy was done. Alveolar histology with no metastases is intermediate risk, treated per COG ARST1431.",
+  "key_points": [
+   "Stage 3",
+   "Group III",
+   "Intermediate risk"
+  ],
+  "keywords": [
+   [
+    "stage 3",
+    "stage three",
+    "stage iii"
+   ],
+   [
+    "group 3",
+    "group three",
+    "group iii"
+   ],
+   [
+    "intermediate"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-15",
+  "site": "Pediatrics",
+  "type": "management",
+  "case": "A child has intermediate risk rhabdomyosarcoma.",
+  "question": "What is the treatment sequence, and when does radiation start?",
+  "answer": "Biopsy or surgery, then VAC (vincristine, actinomycin, cyclophosphamide) for 12 weeks, with delayed primary excision if feasible, then radiation to the primary at week 13, then more chemotherapy. High risk patients start radiation at week 20 or after chemotherapy, with consolidative RT to metastatic sites. Surgery aims for wide local excision with a 5 mm margin; extremity primaries get sentinel node biopsy, and paratesticular primaries in boys over 10 get orchiectomy and ipsilateral RPLND.",
+  "key_points": [
+   "VAC chemotherapy",
+   "RT at week 13",
+   "High risk at week 20",
+   "Delayed primary excision if feasible"
+  ],
+  "keywords": [
+   [
+    "vac",
+    "vincristine",
+    "actinomycin",
+    "dactinomycin",
+    "cyclophosphamide"
+   ],
+   [
+    "week 13",
+    "thirteen"
+   ],
+   [
+    "week 20",
+    "twenty"
+   ],
+   [
+    "delayed primary",
+    "excision",
+    "surgery"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-16",
+  "site": "Pediatrics",
+  "type": "management",
+  "case": "A child with parameningeal rhabdomyosarcoma has cranial nerve deficits at diagnosis, and the team asks for emergency radiation.",
+  "question": "Would you give emergency radiation?",
+  "answer": "Very rarely. Per ARST1431, emergent RT is only for symptomatic cord compression, vision loss or other function-threatening problems, and in most cases chemotherapy relieves symptoms as quickly as radiation. If it is truly needed, give the whole radiation course starting at week 1 to avoid a split course, and hold dactinomycin at week 4. A rushed plan is a sloppy plan.",
+  "key_points": [
+   "Rarely needed",
+   "Chemo relieves symptoms as fast",
+   "Whole course from week 1",
+   "Hold dactinomycin at week 4"
+  ],
+  "keywords": [
+   [
+    "rare",
+    "rarely",
+    "no"
+   ],
+   [
+    "chemo",
+    "chemotherapy"
+   ],
+   [
+    "week 1",
+    "week one",
+    "whole course",
+    "split"
+   ],
+   [
+    "dactinomycin",
+    "actinomycin"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-17",
+  "site": "Pediatrics",
+  "type": "volumes",
+  "case": "A child with rhabdomyosarcoma is starting radiation at week 13.",
+  "question": "How do you define your target volumes?",
+  "answer": "GTV1 is all disease on CT, MRI and PET before any therapy. GTV2 is gross residual disease after chemotherapy, usually assessed at week 9. CTVs are the GTVs plus 1 cm, anatomically constrained, and include the whole involved nodal basin if nodes are treated. PTV is 3 to 5 mm. With residual disease, cone down after 36 Gy to the post-chemo extent, as done on ARST0531. Spare the chiasm, optic nerves, lacrimal gland, retina, brainstem, pituitary and hypothalamus.",
+  "key_points": [
+   "GTV1 pre-treatment extent",
+   "GTV2 post-chemo residual",
+   "CTV plus 1 cm",
+   "Cone down after 36 Gy"
+  ],
+  "keywords": [
+   [
+    "pre-treatment",
+    "pretreatment",
+    "before",
+    "prechemo",
+    "pre-chemo"
+   ],
+   [
+    "residual",
+    "post-chemo",
+    "postchemo",
+    "after chemo"
+   ],
+   [
+    "1 cm",
+    "one centimeter"
+   ],
+   [
+    "36",
+    "thirty six",
+    "cone down"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-18",
+  "site": "Pediatrics",
+  "type": "volumes",
+  "case": "A child has rhabdomyosarcoma.",
+  "question": "What radiation dose do you give by clinical group?",
+  "answer": "Embryonal group I gets no RT. Alveolar group I gets 36 Gy. Group II gets 36 Gy, or 41.4 Gy if nodes are positive. Group III gets 50.4 Gy, or 45 to 50.4 Gy for orbit. After delayed primary excision: R0 36 Gy, R1 41.4 Gy, gross residual 50.4 Gy. ARST1431 allowed 59.4 Gy for tumors over 5 cm at diagnosis without complete response at week 9, and 36 Gy with complete response, but dose escalation has not shown benefit in intermediate risk, so 50.4 Gy is the safest answer.",
+  "key_points": [
+   "Embryonal group I no RT",
+   "Group I alveolar and group II 36 Gy",
+   "Node positive 41.4 Gy",
+   "Group III 50.4 Gy",
+   "59.4 for over 5 cm not proven"
+  ],
+  "keywords": [
+   [
+    "no rt",
+    "no radiation",
+    "none"
+   ],
+   [
+    "36",
+    "thirty six"
+   ],
+   [
+    "41.4",
+    "forty one"
+   ],
+   [
+    "50.4",
+    "fifty point four"
+   ],
+   [
+    "59.4",
+    "fifty nine"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026); DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-19",
+  "site": "Pediatrics",
+  "type": "management",
+  "case": "A child with rhabdomyosarcoma has metastases.",
+  "question": "How do you treat the metastatic sites per ARST1431?",
+  "answer": "SBRT for bone metastases under 5 cm or lung metastases: about 25 to 30 Gy in 5 fractions after complete response, or 30 to 35 Gy in 5 after partial response or stable disease. Other sites, including a bone lesion of 5 cm or more, get conventional fractionation: 40 Gy in 20 after complete response, or 50 Gy in 25 after partial response or stable disease. Bilateral whole lung irradiation is 15 Gy in 10 fractions.",
+  "key_points": [
+   "SBRT for bone under 5 cm or lung",
+   "CR 25 to 30 Gy in 5, PR 30 to 35 in 5",
+   "Conventional 40 Gy in 20 or 50 Gy in 25",
+   "Whole lung 15 Gy in 10"
+  ],
+  "keywords": [
+   [
+    "sbrt",
+    "stereotactic"
+   ],
+   [
+    "25 to 30",
+    "30 to 35",
+    "in 5"
+   ],
+   [
+    "40 gy",
+    "50 gy",
+    "forty",
+    "fifty"
+   ],
+   [
+    "15 gy",
+    "fifteen"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026); DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-20",
+  "site": "Pediatrics",
+  "type": "workup",
+  "case": "A healthy 2-year-old has an enlarging right flank mass. Ultrasound and CT show a right renal mass.",
+  "question": "What is your differential, which syndromes are associated, and what do you ask the surgeon?",
+  "answer": "Differential: Wilms tumor, neuroblastoma, polycystic kidney and sarcoma. Associated syndromes: WAGR, Denys-Drash, Beckwith-Wiedemann and hemihypertrophy. Get urine catecholamines and chest imaging. Ask the surgeon about tumor spillage, lymph nodes, peritoneal implants and the contralateral kidney.",
+  "key_points": [
+   "Wilms vs neuroblastoma",
+   "WAGR, Denys-Drash, Beckwith-Wiedemann",
+   "Urine catecholamines and chest imaging",
+   "Ask about spillage, nodes, implants, contralateral kidney"
+  ],
+  "keywords": [
+   [
+    "neuroblastoma",
+    "wilms"
+   ],
+   [
+    "wagr",
+    "denys",
+    "beckwith"
+   ],
+   [
+    "catecholamine",
+    "chest"
+   ],
+   [
+    "spill",
+    "node",
+    "implant",
+    "contralateral"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-21",
+  "site": "Pediatrics",
+  "type": "management",
+  "case": "A 2-year-old has a favorable histology Wilms tumor with diffuse abdominal spillage at nephrectomy.",
+  "question": "What radiation do you give?",
+  "answer": "Whole abdomen irradiation to 10.5 Gy at 1.5 Gy per fraction. WAI is indicated for stage III with cytology-positive ascites, preoperative rupture, diffuse surgical spillage or peritoneal seeding. Local spillage alone gets flank RT to 10.8 Gy at 1.8 Gy. If diffuse unresectable implants need 21 Gy, shield the remaining kidney to 14.4 Gy or less.",
+  "key_points": [
+   "Whole abdomen irradiation",
+   "10.5 Gy at 1.5 Gy per fraction",
+   "Local spillage gets flank 10.8 Gy",
+   "Kidney 14.4 Gy or less"
+  ],
+  "keywords": [
+   [
+    "whole abdomen",
+    "whole abdominal",
+    "wai"
+   ],
+   [
+    "10.5",
+    "ten point five"
+   ],
+   [
+    "10.8",
+    "flank"
+   ],
+   [
+    "14.4",
+    "fourteen point four"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-22",
+  "site": "Pediatrics",
+  "type": "management",
+  "case": "A child has stage IV favorable histology Wilms tumor with lung-only metastases.",
+  "question": "When can you omit whole lung irradiation, and what did AREN0533 show?",
+  "answer": "If the lung nodules completely resolve after 6 weeks of DD-4A chemotherapy (vincristine, dactinomycin, doxorubicin), they are rapid complete responders and can skip whole lung irradiation. Their 4-year EFS was 79.5 percent, short of the 85 percent goal, but OS was 96 percent. Slow incomplete responders got whole lung irradiation with regimen M, with 4-year EFS 88.5 percent and OS 95 percent. Whole lung dose is 12 Gy at 1.5 Gy per fraction, or 10.5 Gy under 12 months of age.",
+  "key_points": [
+   "Omit WLI if complete response at week 6",
+   "DD-4A chemotherapy",
+   "EFS 79.5 percent, OS 96 percent",
+   "WLI 12 Gy in 1.5 Gy fractions"
+  ],
+  "keywords": [
+   [
+    "week 6",
+    "six weeks",
+    "complete response",
+    "rapid"
+   ],
+   [
+    "dd-4a",
+    "dd4a",
+    "vincristine",
+    "doxorubicin",
+    "dactinomycin"
+   ],
+   [
+    "79",
+    "96",
+    "ninety six"
+   ],
+   [
+    "12 gy",
+    "twelve"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-23",
+  "site": "Pediatrics",
+  "type": "management",
+  "case": "A 14-year-old girl has 3 months of right leg pain and is found to have a localized pelvic Ewing sarcoma.",
+  "question": "What is your management, and what radiation dose would you use?",
+  "answer": "Induction VDC alternating with IE per AEWS1031, then local control, then consolidation chemotherapy. For a localized pelvic primary in a teenage girl, do not do a hemipelvectomy; use definitive chemoradiation after induction shrinks the tumor. Definitive RT is 45 Gy to the pre-chemotherapy volume plus a 10.8 Gy boost to the post-chemotherapy residual, for 55.8 Gy total.",
+  "key_points": [
+   "Induction VDC/IE",
+   "No hemipelvectomy",
+   "Definitive chemoradiation",
+   "45 Gy plus 10.8 Gy boost, 55.8 total"
+  ],
+  "keywords": [
+   [
+    "vdc",
+    "ie",
+    "ifosfamide",
+    "etoposide",
+    "induction"
+   ],
+   [
+    "no surgery",
+    "no hemipelvectomy",
+    "do not resect",
+    "not resect",
+    "avoid surgery"
+   ],
+   [
+    "definitive"
+   ],
+   [
+    "45",
+    "55.8",
+    "fifty five point eight",
+    "10.8"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-24",
+  "site": "Pediatrics",
+  "type": "volumes",
+  "case": "A patient has Ewing sarcoma.",
+  "question": "What are the AEWS1031 radiation doses for each setting?",
+  "answer": "Definitive RT: 45 Gy plus a 10.8 Gy boost. Vertebral lesion: 45 Gy plus 5.4 Gy. Extraosseous tumor with complete response to chemo: 50.4 Gy. Preop RT: 36 Gy. Postop with microscopic residual and over 90 percent necrosis: 50.4 Gy to the boost volume only. Postop with microscopic residual and under 90 percent necrosis: 50.4 Gy to the larger volume. Postop gross residual: 45 Gy plus 10.8 Gy. After preop RT, add 14.4 Gy for microscopic residual or 19.8 Gy for gross residual.",
+  "key_points": [
+   "Definitive 45 plus 10.8",
+   "Vertebra 45 plus 5.4",
+   "Preop 36 Gy",
+   "Postop microscopic 50.4",
+   "After preop RT add 14.4 or 19.8"
+  ],
+  "keywords": [
+   [
+    "55.8",
+    "10.8"
+   ],
+   [
+    "5.4",
+    "50.4",
+    "vertebra"
+   ],
+   [
+    "36",
+    "thirty six"
+   ],
+   [
+    "50.4",
+    "fifty point four"
+   ],
+   [
+    "14.4",
+    "19.8"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-25",
+  "site": "Pediatrics",
+  "type": "management",
+  "case": "A 17-year-old has 2 weeks of nausea, vomiting, diplopia and headache. Imaging shows a fourth ventricle mass. He has only a biopsy, showing ependymoma, and the surgeon says just irradiate.",
+  "question": "What do you recommend?",
+  "answer": "Complete staging with neuraxis MRI and CSF cytology. Push for maximal resection: extent of resection is the most important prognostic factor, so ask for second-look surgery aiming for gross total resection before radiation. On ACNS0831, subtotal resection got induction chemotherapy and second-look surgery, then conformal radiation.",
+  "key_points": [
+   "Neuraxis MRI and CSF",
+   "Second-look surgery for GTR",
+   "Extent of resection is key prognostic factor"
+  ],
+  "keywords": [
+   [
+    "spine",
+    "neuraxis",
+    "csf",
+    "lumbar"
+   ],
+   [
+    "second look",
+    "second-look",
+    "re-resection",
+    "gross total",
+    "gtr",
+    "surgery"
+   ],
+   [
+    "extent of resection",
+    "prognos"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-26",
+  "site": "Pediatrics",
+  "type": "volumes",
+  "case": "An adolescent has an infratentorial ependymoma after gross total resection.",
+  "question": "What are your target volumes and dose per ACNS0831?",
+  "answer": "GTV is the tumor bed and any residual. CTV is GTV plus 0.5 cm, anatomically confined, trimmed where invasion is unlikely and limited to the inner table of the skull. PTV per institution. 54 Gy in 30 fractions of 1.8 Gy, then a 5.4 Gy boost in 3 fractions to residual disease for 59.4 Gy; 54 Gy total is acceptable. Keep the 59.4 Gy region out of the cervical cord; do not accept a plan with a hot spot in the cord.",
+  "key_points": [
+   "CTV plus 0.5 cm",
+   "54 Gy in 30",
+   "Boost to 59.4",
+   "Keep the hot spot out of the cord"
+  ],
+  "keywords": [
+   [
+    "0.5",
+    "5 mm",
+    "half a centimeter",
+    "five millimeter"
+   ],
+   [
+    "54",
+    "fifty four"
+   ],
+   [
+    "59.4",
+    "fifty nine point four"
+   ],
+   [
+    "cord",
+    "spinal cord"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-27",
+  "site": "Pediatrics",
+  "type": "management",
+  "case": "A 14-year-old has short stature and delayed puberty. A pituitary panel is abnormal and MRI shows a suprasellar mass. Surgeons at two hospitals refuse to biopsy.",
+  "question": "What else do you need, and how do you treat a nongerminomatous germ cell tumor?",
+  "answer": "Pan MRI of the brain and spine, serum and CSF tumor markers (AFP and beta-HCG) and CSF cytology. If either marker is elevated, it is a nongerminomatous germ cell tumor and tissue is not needed. Treat with carboplatin-etoposide alternating with ifosfamide-etoposide for 6 cycles, then CSI 36 Gy with an involved-field boost to 54 Gy. Whole ventricle and spinal canal irradiation to 30.6 Gy with a boost to 54 Gy is only on trial, ACNS2021. A pure germinoma would instead get whole ventricular RT plus a boost if M0.",
+  "key_points": [
+   "Serum and CSF AFP and beta-HCG",
+   "Elevated markers, no biopsy needed",
+   "Carbo-etoposide alternating with ifos-etoposide",
+   "CSI 36 Gy, boost to 54 Gy"
+  ],
+  "keywords": [
+   [
+    "afp",
+    "hcg",
+    "marker"
+   ],
+   [
+    "no biopsy",
+    "not need",
+    "don't need",
+    "no tissue",
+    "without biopsy"
+   ],
+   [
+    "carboplatin",
+    "ifosfamide",
+    "etoposide"
+   ],
+   [
+    "36",
+    "54",
+    "craniospinal",
+    "csi"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-28",
+  "site": "Pediatrics",
+  "type": "volumes",
+  "case": "A child has a localized germinoma treated on the ACNS1123 approach.",
+  "question": "How does response to chemotherapy set the radiation dose?",
+  "answer": "Carboplatin and etoposide for 4 cycles. Complete response with normal markers: 18 Gy whole ventricular irradiation plus a 12 Gy boost to the primary. Partial response with 1.5 cm or less residual: 24 Gy whole ventricular plus a 12 Gy boost. In Bartels 2020, 59 percent had a complete response and 3-year PFS with 18 Gy WVI was 94 percent.",
+  "key_points": [
+   "Carbo-etoposide for 4 cycles",
+   "CR: 18 Gy WVI plus 12 Gy",
+   "PR: 24 Gy WVI plus 12 Gy",
+   "12 Gy boost to primary"
+  ],
+  "keywords": [
+   [
+    "carboplatin",
+    "etoposide",
+    "4 cycles"
+   ],
+   [
+    "18",
+    "eighteen"
+   ],
+   [
+    "24",
+    "twenty four"
+   ],
+   [
+    "12",
+    "twelve"
+   ]
+  ],
+  "source": "DeCesaris, Pediatrics review didactic",
+  "edition": "",
+  "flag": "The APS sheet item (aps-peds-28) gives 21 to 24 Gy for partial response and a 30 to 45 Gy total; ACNS1123 used 24 plus 12."
+ },
+ {
+  "id": "cp26-29",
+  "site": "CNS",
+  "type": "workup",
+  "case": "A 65-year-old man has worsening headaches, confusion, trouble speaking and right arm and leg weakness.",
+  "question": "How do you work him up?",
+  "answer": "History and neurologic exam, CBC and CMP. CT head without contrast is often done first, but MRI brain with and without contrast is the gold standard. CT chest, abdomen and pelvis to rule out another primary. When describing the MRI, say the FLAIR signal may be edema or nonenhancing tumor.",
+  "key_points": [
+   "MRI brain with and without contrast",
+   "CT chest abdomen pelvis for other primary",
+   "FLAIR may be edema or nonenhancing tumor"
+  ],
+  "keywords": [
+   [
+    "mri"
+   ],
+   [
+    "ct chest",
+    "chest, abdomen",
+    "other primary",
+    "metastas"
+   ],
+   [
+    "edema",
+    "nonenhancing",
+    "non-enhancing"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-30",
+  "site": "CNS",
+  "type": "workup",
+  "case": "Preliminary pathology after resection reads high-grade glioma.",
+  "question": "What else do you ask the pathologist?",
+  "answer": "IDH1 and IDH2 status: wild-type means glioblastoma and mutant means it is not. MGMT promoter methylation. 1p/19q codeletion, which means oligodendroglioma. ATRX loss, which suggests an astrocytic tumor. Features of molecular glioblastoma: TERT promoter mutation, EGFR amplification, gain of chromosome 7 with loss of 10, and CDKN2A/B homozygous deletion. Molecular features now outweigh histologic grade, which is based on mitoses, endothelial proliferation, atypia and necrosis.",
+  "key_points": [
+   "IDH status",
+   "MGMT methylation",
+   "1p/19q codeletion",
+   "ATRX",
+   "TERT, EGFR, +7/-10, CDKN2A"
+  ],
+  "keywords": [
+   [
+    "idh"
+   ],
+   [
+    "mgmt"
+   ],
+   [
+    "1p",
+    "19q",
+    "codeletion"
+   ],
+   [
+    "atrx"
+   ],
+   [
+    "tert",
+    "egfr",
+    "chromosome 7",
+    "cdkn2a"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-31",
+  "site": "CNS",
+  "type": "staging",
+  "case": "Pathology shows a WHO grade 4, IDH-mutant diffuse glioma.",
+  "question": "What is the final diagnosis?",
+  "answer": "Astrocytoma, IDH-mutant, CNS WHO grade 4. Under WHO 2021, glioblastoma is by definition IDH wild-type, so an IDH-mutant grade 4 tumor is not called glioblastoma.",
+  "key_points": [
+   "Astrocytoma, IDH-mutant, grade 4",
+   "Not glioblastoma; GBM is IDH wild-type"
+  ],
+  "keywords": [
+   [
+    "astrocytoma"
+   ],
+   [
+    "not glioblastoma",
+    "not gbm",
+    "wild-type",
+    "wild type"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": "Diagnosis wording follows WHO CNS 2021; the source slide was an image, so this answer is standard WHO 2021 naming."
+ },
+ {
+  "id": "cp26-32",
+  "site": "CNS",
+  "type": "management",
+  "case": "A 65-year-old with glioblastoma, KPS 90, has had a gross total resection.",
+  "question": "What is your treatment, including temozolomide dosing?",
+  "answer": "Consider a clinical trial. Otherwise the Stupp regimen: 60 Gy in 30 fractions with concurrent temozolomide 75 milligrams per meter squared daily, including weekends. Then adjuvant temozolomide 150 to 200 milligrams per meter squared on days 1 to 5 of each 28-day cycle for 6 to 12 cycles, with tumor treating fields. Median survival is still about 20 months. With KPS under 60, use 40 Gy in 15, 34 Gy in 10 or 25 Gy in 5.",
+  "key_points": [
+   "60 Gy in 30",
+   "Concurrent TMZ 75 mg/m2 daily including weekends",
+   "Adjuvant TMZ 150-200 days 1-5 every 28 days",
+   "Tumor treating fields",
+   "Hypofractionate if KPS under 60"
+  ],
+  "keywords": [
+   [
+    "60",
+    "sixty"
+   ],
+   [
+    "75",
+    "seventy five",
+    "weekend"
+   ],
+   [
+    "150",
+    "200",
+    "days 1",
+    "28"
+   ],
+   [
+    "tumor treating",
+    "ttf",
+    "optune"
+   ],
+   [
+    "40 gy",
+    "15 fractions",
+    "34",
+    "25 gy"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-33",
+  "site": "CNS",
+  "type": "volumes",
+  "case": "You are contouring a resected glioblastoma.",
+  "question": "How do RTOG and EORTC volumes differ?",
+  "answer": "RTOG: GTV1 is the T1 contrast cavity plus residual and GTV2 adds the T2 FLAIR abnormality. CTV2 is GTV2 plus 2 cm treated to 46 Gy, then CTV1 is GTV1 plus 2 cm boosted 14 Gy to 60 Gy. EORTC: a single GTV of the enhancing cavity plus residual, CTV plus 2 to 3 cm, treated to 60 Gy with no FLAIR phase. PTV is 3 to 5 mm for both. Smaller 1 to 2 cm margins are supported, but 2 cm is the safe boards answer.",
+  "key_points": [
+   "RTOG two phases, FLAIR to 46 Gy",
+   "RTOG boost to 60 Gy",
+   "EORTC single volume, enhancing plus 2 to 3 cm",
+   "2 cm CTV margin"
+  ],
+  "keywords": [
+   [
+    "46",
+    "flair",
+    "two phase"
+   ],
+   [
+    "60",
+    "boost"
+   ],
+   [
+    "eortc",
+    "single",
+    "2 to 3",
+    "one phase"
+   ],
+   [
+    "2 cm",
+    "two centimeter"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-34",
+  "site": "CNS",
+  "type": "constraints",
+  "case": "You are planning a brain tumor with conventional or 2.5 Gy per fraction radiation.",
+  "question": "What are your key organ at risk constraints?",
+  "answer": "Conventional: optic apparatus D0.03cc under 54 Gy, brainstem under 54 to 55 Gy, spinal cord under 45 Gy, cochlea mean under 30 to 45 Gy, lens under 6 to 8 Gy and pituitary under 50 Gy. Hypofractionated at 2.5 Gy: optic apparatus under 42 Gy with V45 under 0.5 cc, brainstem under 44 Gy, cord under 42 Gy with V40 under 5 cc, cochlea under 33 Gy, lens under 9 Gy and pituitary mean under 25 Gy.",
+  "key_points": [
+   "Optic apparatus under 54 Gy",
+   "Brainstem 54 to 55 Gy",
+   "Cord under 45 Gy",
+   "Cochlea mean under 30 to 45 Gy",
+   "Lens under 6 to 8 Gy"
+  ],
+  "keywords": [
+   [
+    "54",
+    "optic",
+    "chiasm"
+   ],
+   [
+    "brainstem",
+    "55"
+   ],
+   [
+    "45",
+    "cord"
+   ],
+   [
+    "cochlea"
+   ],
+   [
+    "lens"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-35",
+  "site": "CNS",
+  "type": "toxicity",
+  "case": "A patient is starting brain radiation on dexamethasone.",
+  "question": "What acute radiation side effects and steroid toxicities do you counsel about?",
+  "answer": "Radiation: fatigue, headache, hair loss, dry eyes, hearing changes, nausea and vomiting, seizures, and worsening of existing deficits from edema. Steroids, acute: increased appetite and weight gain, poor wound healing, gastritis so give GI prophylaxis, insomnia, irritability or mania, and immunosuppression with thrush and PJP, so give Bactrim if steroids will last over a month. Steroids, long term: cushingoid appearance, proximal muscle weakness, osteonecrosis, leg swelling, DVT and adrenal insufficiency.",
+  "key_points": [
+   "Fatigue, alopecia, headache, nausea",
+   "GI prophylaxis for gastritis",
+   "PJP prophylaxis with Bactrim if over a month",
+   "Hyperglycemia, myopathy, adrenal insufficiency"
+  ],
+  "keywords": [
+   [
+    "fatigue",
+    "hair",
+    "alopecia",
+    "headache",
+    "nausea"
+   ],
+   [
+    "gastritis",
+    "ppi",
+    "gi prophylaxis",
+    "proton pump",
+    "famotidine"
+   ],
+   [
+    "pjp",
+    "pcp",
+    "bactrim",
+    "trimethoprim"
+   ],
+   [
+    "myopathy",
+    "weakness",
+    "adrenal",
+    "cushing",
+    "osteonecrosis",
+    "weight"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-36",
+  "site": "CNS",
+  "type": "management",
+  "case": "A 39-year-old has new focal seizures and a mostly nonenhancing left frontal mass. Biopsy shows an IDH-mutant, 1p/19q codeleted oligodendroglioma, grade 2.",
+  "question": "What treatment do you recommend, and what did RTOG 9802 show?",
+  "answer": "She is high risk by RTOG 9802 because she had only a biopsy; high risk was age 40 or older, or under 40 with subtotal resection or biopsy. Recommend maximal safe resection if feasible, then 54 Gy in 30 fractions to the T2 abnormality followed by 6 cycles of PCV (procarbazine, lomustine, vincristine). RTOG 9802 showed that adding PCV improved 10-year PFS from 21 to 51 percent and 10-year OS from 40 to 60 percent.",
+  "key_points": [
+   "High risk: biopsy or STR, or age 40 or older",
+   "54 Gy in 30 to T2 abnormality",
+   "Then PCV for 6 cycles",
+   "10-year OS 60 vs 40 percent"
+  ],
+  "keywords": [
+   [
+    "high risk",
+    "biopsy",
+    "40"
+   ],
+   [
+    "54",
+    "fifty four",
+    "t2"
+   ],
+   [
+    "pcv",
+    "procarbazine",
+    "lomustine",
+    "ccnu"
+   ],
+   [
+    "60",
+    "40",
+    "overall survival"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-37",
+  "site": "CNS",
+  "type": "management",
+  "case": "The same 39-year-old feels well and does not want radiation or chemotherapy because of cognitive risk.",
+  "question": "What could you offer, and what did INDIGO show?",
+  "answer": "Vorasidenib, an IDH1/2 inhibitor, per INDIGO. INDIGO enrolled patients 12 or older with KPS 80 or more and residual or recurrent grade 2 IDH-mutant oligodendroglioma or astrocytoma after surgery within 5 years and no other treatment. Median PFS was 27.7 months versus 11.1 months with placebo, and time to next intervention improved with a hazard ratio of 0.26.",
+  "key_points": [
+   "Vorasidenib, IDH inhibitor",
+   "Grade 2 IDH-mutant after surgery only",
+   "PFS 27.7 vs 11.1 months"
+  ],
+  "keywords": [
+   [
+    "vorasidenib",
+    "vorasedinib",
+    "idh inhibitor"
+   ],
+   [
+    "grade 2",
+    "low grade",
+    "surgery"
+   ],
+   [
+    "27",
+    "11",
+    "pfs"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-38",
+  "site": "CNS",
+  "type": "toxicity",
+  "case": "A young adult will receive 54 Gy for a low-grade glioma.",
+  "question": "What long-term toxicities do you counsel about?",
+  "answer": "Chronic fatigue, permanent hair loss in high-dose areas, endocrine and pituitary dysfunction, and neurocognitive decline.",
+  "key_points": [
+   "Chronic fatigue",
+   "Hair loss",
+   "Pituitary or endocrine dysfunction",
+   "Neurocognitive decline"
+  ],
+  "keywords": [
+   [
+    "fatigue"
+   ],
+   [
+    "hair",
+    "alopecia"
+   ],
+   [
+    "pituitary",
+    "endocrine",
+    "hormon"
+   ],
+   [
+    "cognit",
+    "memory"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-39",
+  "site": "CNS",
+  "type": "workup",
+  "case": "A 67-year-old man has visual changes and a suprasellar cystic lesion.",
+  "question": "What is your differential, what visual deficit do you expect, and what workup do you make sure was done?",
+  "answer": "Supratentorial differential, COP GEMM: craniopharyngioma, optic glioma, pituitary adenoma, germ cell tumor, ependymoma, meningioma and metastasis. Chiasm compression typically causes a bitemporal hemianopsia. Workup: history, neurologic exam, CBC, CMP, a full pituitary panel, tumor markers to rule out germ cell tumor, audiometry, and an ophthalmology exam with visual fields.",
+  "key_points": [
+   "Craniopharyngioma, pituitary adenoma, germ cell, meningioma",
+   "Bitemporal hemianopsia",
+   "Pituitary panel",
+   "Ophthalmology exam with visual fields"
+  ],
+  "keywords": [
+   [
+    "craniopharyngioma",
+    "pituitary adenoma",
+    "germ cell",
+    "meningioma"
+   ],
+   [
+    "bitemporal",
+    "hemianop"
+   ],
+   [
+    "pituitary panel",
+    "hormone",
+    "endocrine"
+   ],
+   [
+    "ophthalm",
+    "visual field"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": "The visual deficit slide was an image; bitemporal hemianopsia is the standard answer for chiasm compression."
+ },
+ {
+  "id": "cp26-40",
+  "site": "CNS",
+  "type": "workup",
+  "case": "A patient has a sellar mass.",
+  "question": "Which hormones come from the anterior and posterior pituitary?",
+  "answer": "Posterior pituitary: ADH and oxytocin. Anterior pituitary: growth hormone, TSH, LH and FSH, ACTH and prolactin.",
+  "key_points": [
+   "Posterior: ADH and oxytocin",
+   "Anterior: GH, TSH, ACTH",
+   "Anterior: LH, FSH, prolactin"
+  ],
+  "keywords": [
+   [
+    "adh",
+    "vasopressin",
+    "oxytocin"
+   ],
+   [
+    "growth hormone",
+    "gh",
+    "tsh",
+    "acth"
+   ],
+   [
+    "lh",
+    "fsh",
+    "prolactin"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-41",
+  "site": "CNS",
+  "type": "management",
+  "case": "After subtotal resection of a suprasellar cyst, the op note describes crankcase oil fluid. Pathology is adamantinomatous craniopharyngioma.",
+  "question": "What do you know about this tumor, and what is your adjuvant recommendation?",
+  "answer": "Craniopharyngioma arises from Rathke's pouch, abuts the hypothalamus and third ventricle, and has a bimodal age peak at 5 to 14 and 50 to 75. Adamantinomatous is about 90 percent and has WNT pathway mutations; papillary is under 10 percent in children and about 30 percent in adults and carries BRAF V600E. Gross total resection is observed, with DFS around 70 to 85 percent but risk of vision loss and hypothalamic injury. Subtotal resection, as here, gets postoperative radiation. BRAF-mutant papillary tumors can get vemurafenib and cobimetinib. Recurrence: radiation or SRS if not previously irradiated, or intracystic bleomycin or radioactive colloid if the cyst is over half the tumor.",
+  "key_points": [
+   "Rathke's pouch",
+   "Adamantinomatous WNT, papillary BRAF",
+   "STR gets postop RT",
+   "GTR is observed"
+  ],
+  "keywords": [
+   [
+    "rathke"
+   ],
+   [
+    "wnt",
+    "beta catenin",
+    "ctnnb1",
+    "braf"
+   ],
+   [
+    "radiation",
+    "postop",
+    "adjuvant",
+    "rt"
+   ],
+   [
+    "observ",
+    "gross total"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
+  "id": "cp26-42",
+  "site": "CNS",
+  "type": "volumes",
+  "case": "You are planning postoperative radiation for a subtotally resected craniopharyngioma.",
+  "question": "What are your target volumes, and what do you watch for during treatment?",
+  "answer": "GTV is residual disease including the cyst wall on MRI and CT. CTV is GTV plus 0.5 cm if you can get MRIs every 1 to 2 weeks during treatment, or plus 1 cm if not. PTV is 3 to 5 mm. The dose is usually 54 Gy in 30 fractions. About 10 to 12 percent of cysts grow during treatment and 20 to 30 percent within 6 months after, which may need drainage or replanning.",
+  "key_points": [
+   "GTV includes cyst wall",
+   "CTV 0.5 cm with frequent MRI, 1 cm without",
+   "Imaging every 1 to 2 weeks",
+   "Cyst growth may need drainage or replanning"
+  ],
+  "keywords": [
+   [
+    "cyst wall",
+    "cyst"
+   ],
+   [
+    "0.5",
+    "5 mm",
+    "1 cm",
+    "one centimeter"
+   ],
+   [
+    "every 1 to 2",
+    "weekly",
+    "every week",
+    "mri during"
+   ],
+   [
+    "growth",
+    "grow",
+    "drain",
+    "replan"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": "The APS sheet item (aps-peds-32) gives a 1 to 2 cm CTV; this review uses 0.5 to 1 cm based on imaging frequency."
+ },
+ {
+  "id": "cp26-43",
+  "site": "CNS",
+  "type": "toxicity",
+  "case": "Two weeks into radiation for craniopharyngioma, a patient becomes acutely confused. Labs show high serum sodium.",
+  "question": "What is happening, and how do you treat it?",
+  "answer": "Central diabetes insipidus. It occurs in about 60 to 70 percent after surgery, and about 30 percent can still develop it after radiation. It causes polyuria, thirst and hypernatremia. Treat with free water replacement, which is favored initially after surgery, and desmopressin, and check urine and serum osmolality frequently.",
+  "key_points": [
+   "Central diabetes insipidus",
+   "Polyuria, thirst, hypernatremia",
+   "Desmopressin",
+   "Water replacement and osmolality checks"
+  ],
+  "keywords": [
+   [
+    "diabetes insipidus",
+    "di"
+   ],
+   [
+    "polyuria",
+    "thirst",
+    "hypernatremia",
+    "sodium"
+   ],
+   [
+    "desmopressin",
+    "ddavp"
+   ],
+   [
+    "water",
+    "fluid",
+    "osmolality"
+   ]
+  ],
+  "source": "CNS/Peds mock oral boards review (March 2026)",
+  "edition": "",
+  "flag": ""
+ },
+ {
   "id": "gyn-1",
   "site": "GYN",
   "type": "workup",
