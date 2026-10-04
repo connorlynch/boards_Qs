@@ -6334,14 +6334,14 @@
   "type": "volumes",
   "case": "A 12-year-old has a non-metastatic suprasellar germinoma with complete response after chemotherapy.",
   "question": "What is your radiation dose and target?",
-  "answer": "After carboplatin and etoposide for 4 cycles, whole ventricular irradiation: 18 Gy for complete response or 21 to 24 Gy for partial, at 1.5 Gy per fraction. CTV is the lateral, third and fourth ventricles plus suprasellar and pineal cisterns, PTV 3 to 5 mm. Then boost the prechemo GTV plus 1 to 1.5 cm to 30 to 36 Gy for CR, or 36 to 45 Gy for PR.",
+  "answer": "After carboplatin and etoposide for 4 cycles, whole ventricular irradiation: 18 Gy for complete response or 24 Gy for partial response, at 1.5 Gy per fraction. CTV is the lateral, third and fourth ventricles plus suprasellar and pineal cisterns, PTV 3 to 5 mm. Then a 12 Gy boost to the primary, for 30 Gy total after CR or 36 Gy after PR, per ACNS1123 stratum 2 for pure germinoma.",
   "key_points": [
    "carbo/etoposide x4",
    "whole ventricular 18 Gy CR",
-   "21 to 24 Gy for PR",
+   "24 Gy for PR",
    "1.5 Gy per fraction",
    "include suprasellar and pineal cisterns",
-   "boost to 30 to 36 Gy"
+   "12 Gy boost, 30 or 36 Gy total"
   ],
   "keywords": [
    [
@@ -6355,8 +6355,8 @@
     "eighteen"
    ],
    [
-    "21 to 24",
-    "twenty one"
+    "24",
+    "twenty four"
    ],
    [
     "1.5",
@@ -6368,11 +6368,13 @@
     "pineal"
    ],
    [
-    "30 to 36",
-    "thirty six"
+    "12",
+    "twelve",
+    "30",
+    "36"
    ]
   ],
-  "source": "APS Boards Condensed (spreadsheet), Pediatrics row: Germ Cell Tumors, Pure Germinoma, Non Metastatic",
+  "source": "APS Boards Condensed (spreadsheet), Pediatrics row: Germ Cell Tumors, Pure Germinoma, Non Metastatic; PR dose and boost per ACNS1123 stratum 2 (user decision)",
   "edition": "",
   "flag": ""
  },
@@ -10348,16 +10350,20 @@
   "id": "cp26-28",
   "site": "Pediatrics",
   "type": "volumes",
-  "case": "A child has a localized germinoma treated on the ACNS1123 approach.",
-  "question": "How does response to chemotherapy set the radiation dose?",
-  "answer": "Carboplatin and etoposide for 4 cycles. Complete response with normal markers: 18 Gy whole ventricular irradiation plus a 12 Gy boost to the primary. Partial response with 1.5 cm or less residual: 24 Gy whole ventricular plus a 12 Gy boost. In Bartels 2020, 59 percent had a complete response and 3-year PFS with 18 Gy WVI was 94 percent.",
+  "case": "A child has a localized pure germinoma (normal markers, M0) treated on the ACNS1123 approach.",
+  "question": "For pure germinoma (ACNS1123 stratum 2), how does response to chemotherapy set the radiation dose?",
+  "answer": "This is ACNS1123 stratum 2, for localized pure germinoma. Carboplatin and etoposide for 4 cycles. Complete response with normal markers: 18 Gy whole ventricular irradiation plus a 12 Gy boost to the primary, 30 Gy total. Partial response with 1.5 cm or less residual: 24 Gy whole ventricular plus a 12 Gy boost, 36 Gy total. In Bartels 2020, 59 percent had a complete response and 3-year PFS with 18 Gy WVI was 94 percent.",
   "key_points": [
+   "Pure germinoma, ACNS1123 stratum 2",
    "Carbo-etoposide for 4 cycles",
    "CR: 18 Gy WVI plus 12 Gy",
-   "PR: 24 Gy WVI plus 12 Gy",
-   "12 Gy boost to primary"
+   "PR: 24 Gy WVI plus 12 Gy"
   ],
   "keywords": [
+   [
+    "germinoma",
+    "stratum 2"
+   ],
    [
     "carboplatin",
     "etoposide",
@@ -10370,15 +10376,11 @@
    [
     "24",
     "twenty four"
-   ],
-   [
-    "12",
-    "twelve"
    ]
   ],
   "source": "DeCesaris, Pediatrics review didactic",
   "edition": "",
-  "flag": "The APS sheet item (aps-peds-28) gives 21 to 24 Gy for partial response and a 30 to 45 Gy total; ACNS1123 used 24 plus 12."
+  "flag": ""
  },
  {
   "id": "cp26-29",
