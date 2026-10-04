@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Boards Flashcards</title>
+<meta name="theme-color" content="#0e6a86">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Flashcards">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#eef1f2; --surface:#ffffff; --line:#cfd7da; --fg:#14232b; --muted:#5a6b73;
+  --accent:#0e6a86; --accent-fg:#ffffff; --accent-bg:#e1f0f5; --flag:#b4570c; --flag-bg:#fbeedf;
+  --f-display:"Source Serif 4", Georgia, serif; --f-body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f171b; --surface:#16232a; --line:#2a3b43; --fg:#e3ecef; --muted:#93a6ae;
+  --accent:#4fb6d4; --accent-fg:#0f171b; --accent-bg:#11313c; --flag:#f0a35a; --flag-bg:#3a2712; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f171b; --surface:#16232a; --line:#2a3b43; --fg:#e3ecef; --muted:#93a6ae;
+  --accent:#4fb6d4; --accent-fg:#0f171b; --accent-bg:#11313c; --flag:#f0a35a; --flag-bg:#3a2712; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 var(--f-body);
+  padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+.app{max-width:640px;min-height:100%;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:14px}
+header{display:flex;gap:10px;align-items:center}
+h1{font:600 1.25rem/1.2 var(--f-display);margin:0;flex:1}
+select{font:500 1rem var(--f-body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%}
+.count{font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.card{flex:1;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px;min-height:240px}
+.tags{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font:600 .72rem var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tag-flag{color:var(--flag)}
+.case{color:var(--muted);margin:0}
+.q{font:600 1.15rem/1.4 var(--f-display);margin:0}
+.ans{border-top:1px solid var(--line);padding-top:12px;margin:0}
+.ans-label{font:600 .72rem var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:4px}
+.note{font-size:.8rem;color:var(--muted)}
+.empty{color:var(--muted);margin:auto 0;text-align:center}
+.controls{position:sticky;bottom:0;display:grid;grid-template-columns:1fr 2fr 1fr;gap:10px;padding:10px 0 4px;background:var(--bg)}
+button{font:600 1rem var(--f-body);border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--fg);padding:16px 8px;cursor:pointer;min-height:64px;touch-action:manipulation}
+button:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#readBtn{background:var(--accent);color:var(--accent-fg);border-color:var(--accent);font-size:1.1rem}
+#readBtn.speaking{box-shadow:0 0 0 4px var(--accent-bg)}
+#flagBtn[aria-pressed="true"]{background:var(--flag-bg);border-color:var(--flag);color:var(--flag)}
+button:disabled{opacity:.45;cursor:default}
+details{font-size:.88rem;color:var(--muted)}
+summary{cursor:pointer;padding:4px 0}
+.settings{display:flex;flex-direction:column;gap:10px;padding:8px 0}
+.settings label{display:flex;flex-direction:column;gap:4px}
+.settings input[type=range]{width:100%}
+.linkbtn{min-height:0;padding:8px 12px;font-size:.88rem;font-weight:500;align-self:flex-start}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>Boards Flashcards</h1>
+    <span class="count" id="count"></span>
+  </header>
+  <select id="topic" aria-label="Topic"></select>
+
+  <main class="card" id="card" aria-live="polite">
+    <p class="empty" id="loading">Loading questions…</p>
+  </main>
+
+  <details>
+    <summary>Voice settings</summary>
+    <div class="settings">
+      <label>Voice <select id="voice"></select></label>
+      <label>Speed <input id="rate" type="range" min="0.7" max="1.4" step="0.05" value="1"></label>
+      <button class="linkbtn" id="copyFlags">Copy flagged questions</button>
+      <span id="copyMsg" role="status"></span>
+    </div>
+  </details>
+
+  <nav class="controls">
+    <button id="flagBtn" aria-pressed="false">Flag</button>
+    <button id="readBtn">Read question</button>
+    <button id="nextBtn">Next</button>
+  </nav>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem("fc:"+k); return v===null ? d : JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem("fc:"+k, JSON.stringify(v)); }catch(e){} }
+};
+let BANK = [], deck = [], cur = null, stage = 0; // stage 0: nothing read, 1: question read, 2: answer read
+let flags = store.get("flags", {});
+let topic = store.get("topic", "all");
+
+// ---- speech ----
+const synth = window.speechSynthesis;
+let voices = [];
+function loadVoices(){
+  if(!synth) return;
+  voices = synth.getVoices().filter(v => /^en/i.test(v.lang));
+  const sel = $("#voice"), saved = store.get("voice", "");
+  sel.innerHTML = "";
+  voices.forEach(v => { const o = document.createElement("option"); o.value = v.name; o.textContent = v.name; sel.append(o); });
+  if(voices.some(v => v.name === saved)) sel.value = saved;
+}
+if(synth){ loadVoices(); synth.onvoiceschanged = loadVoices; }
+$("#voice").onchange = e => store.set("voice", e.target.value);
+$("#rate").value = store.get("rate", 1);
+$("#rate").oninput = e => store.set("rate", +e.target.value);
+
+function speakable(t){
+  return String(t)
+    .replace(/(\d)\s*Gy\b/g,"$1 gray").replace(/\bGy\b/g,"gray")
+    .replace(/(\d+(?:\.\d+)?) gray\s*\/\s*(\d+)\s*(?:fx|fractions)?/gi,"$1 gray in $2 fractions")
+    .replace(/(\d+(?:\.\d+)?)\s*\/\s*(\d+)\s*(?:fx|fractions)\b/gi,"$1 in $2 fractions")
+    .replace(/\bfx\b/gi,"fractions")
+    .replace(/\bcm\b/g,"centimeters").replace(/\bmm\b/g,"millimeters").replace(/\byo\b/gi,"year old")
+    .replace(/(\d)\s*([MF])\b/g,(m,a,s)=>a+(s==="M"?" year old man":" year old woman"))
+    .replace(/[≥]/g," at least ").replace(/[≤]/g," at most ").replace(/~/g,"about ")
+    .replace(/→|->/g," then ").replace(/\+\/-/g," with or without ");
+}
+function speak(text){
+  if(!synth) return;
+  synth.cancel();
+  const u = new SpeechSynthesisUtterance(speakable(text));
+  const v = voices.find(v => v.name === $("#voice").value); if(v) u.voice = v;
+  u.rate = +$("#rate").value || 1;
+  u.onstart = () => $("#readBtn").classList.add("speaking");
+  u.onend = u.onerror = () => $("#readBtn").classList.remove("speaking");
+  synth.speak(u);
+}
+
+// ---- topics ----
+function pool(){
+  if(topic === "flagged") return BANK.filter(q => flags[q.id]);
+  if(topic === "all") return BANK;
+  return BANK.filter(q => q.site === topic);
+}
+function renderTopics(){
+  const sel = $("#topic"); sel.innerHTML = "";
+  const add = (val, label, parent) => { const o = document.createElement("option"); o.value = val; o.textContent = label; (parent||sel).append(o); };
+  add("all", `All topics (${BANK.length})`);
+  const sites = [...new Set(BANK.map(q => q.site))].sort();
+  const g = document.createElement("optgroup"); g.label = "Disease site"; sel.append(g);
+  sites.forEach(s => add(s, `${s} (${BANK.filter(q => q.site === s).length})`, g));
+  add("flagged", `Flagged for review (${Object.keys(flags).filter(id => BANK.some(q => q.id === id)).length})`);
+  if(![...sel.options].some(o => o.value === topic)) topic = "all";
+  sel.value = topic;
+}
+$("#topic").onchange = e => { topic = e.target.value; store.set("topic", topic); deck = []; next(); };
+
+// ---- cards ----
+function shuffle(a){ for(let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function next(){
+  if(synth) synth.cancel();
+  const p = pool();
+  if(!p.length){ cur = null; render(); return; }
+  if(!deck.length){ deck = shuffle(p.map(q => q.id)); if(cur && deck.length > 1 && deck[deck.length-1] === cur.id) deck.unshift(deck.pop()); }
+  const id = deck.pop();
+  cur = BANK.find(q => q.id === id); stage = 0;
+  store.set("last", cur.id);
+  render();
+}
+function el(tag, cls, text){ const e = document.createElement(tag); if(cls) e.className = cls; if(text != null) e.textContent = text; return e; }
+function render(){
+  const card = $("#card"); card.innerHTML = "";
+  const p = pool();
+  $("#count").textContent = p.length ? `${p.length - deck.length} of ${p.length}` : "";
+  const has = !!cur;
+  $("#readBtn").disabled = $("#flagBtn").disabled = !has;
+  $("#nextBtn").disabled = !p.length;
+  if(!has){
+    card.append(el("p", "empty", topic === "flagged" ? "Nothing flagged yet. Tap Flag on any card to save it here." : "No questions in this topic."));
+    $("#readBtn").textContent = "Read question";
+    $("#flagBtn").setAttribute("aria-pressed", "false"); $("#flagBtn").textContent = "Flag";
+    return;
+  }
+  const tags = el("div", "tags");
+  tags.append(el("span", "", cur.site), el("span", "", "·"), el("span", "", cur.type));
+  if(cur.flag) tags.append(el("span", "", "·"), el("span", "", cur.flag));
+  if(flags[cur.id]) tags.append(el("span", "", "·"), el("span", "tag-flag", "Flagged"));
+  card.append(tags);
+  if(cur.case) card.append(el("p", "case", cur.case));
+  card.append(el("p", "q", cur.question));
+  if(stage >= 2){
+    const a = el("div", "ans"); a.append(el("span", "ans-label", "Answer"), document.createTextNode(cur.answer));
+    card.append(a);
+    if(cur.source) card.append(el("span", "note", "Source: " + cur.source + (cur.edition ? " · " + cur.edition : "")));
+  }
+  $("#readBtn").textContent = stage === 0 ? "Read question" : stage === 1 ? "Read answer" : "Read answer again";
+  const f = !!flags[cur.id];
+  $("#flagBtn").setAttribute("aria-pressed", f); $("#flagBtn").textContent = f ? "Flagged" : "Flag";
+}
+$("#readBtn").onclick = () => {
+  if(!cur) return;
+  if(stage === 0){ stage = 1; speak((cur.case ? cur.case + " ... " : "") + cur.question); }
+  else { stage = 2; speak(cur.answer); }
+  render();
+};
+$("#nextBtn").onclick = next;
+$("#flagBtn").onclick = () => {
+  if(!cur) return;
+  if(flags[cur.id]) delete flags[cur.id]; else flags[cur.id] = Date.now();
+  store.set("flags", flags);
+  const keep = topic; renderTopics(); topic = keep; $("#topic").value = topic;
+  render();
+};
+$("#copyFlags").onclick = async () => {
+  const list = BANK.filter(q => flags[q.id]).map(q => `[${q.id}] ${q.site}: ${q.question}`).join("\n");
+  if(!list){ $("#copyMsg").textContent = "Nothing flagged yet."; return; }
+  try{ await navigator.clipboard.writeText(list); $("#copyMsg").textContent = "Copied. Paste it to Claude to review these."; }
+  catch(e){ $("#copyMsg").textContent = "Couldn't copy on this browser."; }
+};
+
+// ---- keep the screen on while the page is open ----
+let wakeLock = null;
+async function keepAwake(){ try{ if("wakeLock" in navigator && document.visibilityState === "visible" && !wakeLock){ wakeLock = await navigator.wakeLock.request("screen"); wakeLock.addEventListener("release", () => { wakeLock = null; }); } }catch(e){ wakeLock = null; } }
+document.addEventListener("click", keepAwake); document.addEventListener("visibilitychange", keepAwake);
+
+// ---- load ----
+fetch("questions.json").then(r => r.json()).then(b => {
+  BANK = b; renderTopics();
+  const last = BANK.find(q => q.id === store.get("last", ""));
+  if(last && pool().includes(last)){ deck = shuffle(pool().map(q => q.id).filter(id => id !== last.id)); cur = last; stage = 0; render(); }
+  else next();
+}).catch(() => { $("#loading").textContent = "Couldn't load questions. Check your connection and reload."; });
+
+if("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+</script>
+</body>
+</html>
