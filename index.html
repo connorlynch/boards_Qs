@@ -56,6 +56,17 @@ summary{cursor:pointer;padding:4px 0}
 .settings label{display:flex;flex-direction:column;gap:4px}
 .settings input[type=range]{width:100%}
 .linkbtn{min-height:0;padding:8px 12px;font-size:.88rem;font-weight:500;align-self:flex-start}
+/* Phones: the buttons fill the bottom half so they can be hit without looking. Read spans the bottom row, Flag and Next sit above it. */
+@media (max-width:700px){
+  body{padding:0}
+  .app{height:100vh;height:100dvh;min-height:0;gap:10px;
+    padding:calc(env(safe-area-inset-top,0px) + 12px) 12px calc(env(safe-area-inset-bottom,0px) + 12px)}
+  .card{min-height:0;overflow-y:auto;padding:14px}
+  .controls{position:static;flex:0 0 48%;grid-template-columns:1fr 1fr;grid-template-rows:2fr 3fr;padding:0}
+  #flagBtn{grid-area:1/1} #nextBtn{grid-area:1/2} #readBtn{grid-area:2/1/3/3}
+  .controls button{font-size:1.35rem;border-radius:18px}
+  #readBtn{font-size:1.7rem}
+}
 </style>
 </head>
 <body>
@@ -168,7 +179,7 @@ function next(){
 }
 function el(tag, cls, text){ const e = document.createElement(tag); if(cls) e.className = cls; if(text != null) e.textContent = text; return e; }
 function render(){
-  const card = $("#card"); card.innerHTML = "";
+  const card = $("#card"); card.innerHTML = ""; card.scrollTop = 0;
   const p = pool();
   $("#count").textContent = p.length ? `${p.length - deck.length} of ${p.length}` : "";
   const has = !!cur;
@@ -190,6 +201,7 @@ function render(){
   if(stage >= 2){
     const a = el("div", "ans"); a.append(el("span", "ans-label", "Answer"), document.createTextNode(cur.answer));
     card.append(a);
+    if(card.scrollHeight > card.clientHeight) card.scrollTop = a.offsetTop - card.offsetTop - 8; // on phones, bring the answer into view
     if(cur.source) card.append(el("span", "note", "Source: " + cur.source + (cur.edition ? " · " + cur.edition : "")));
   }
   $("#readBtn").textContent = stage === 0 ? "Read question" : stage === 1 ? "Read answer" : "Read answer again";
