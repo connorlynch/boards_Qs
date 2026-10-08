@@ -84,7 +84,7 @@ summary{cursor:pointer;padding:4px 0}
   <details>
     <summary>Voice settings</summary>
     <div class="settings">
-      <label>Voice <select id="voice"></select></label>
+      <label>Backup voice (only for cards without a recording) <select id="voice"></select></label>
       <label>Speed <input id="rate" type="range" min="0.7" max="1.4" step="0.05" value="1"></label>
       <button class="linkbtn" id="copyFlags">Copy flagged questions</button>
       <span id="copyMsg" role="status"></span>
@@ -122,7 +122,7 @@ function loadVoices(){
 if(synth){ loadVoices(); synth.onvoiceschanged = loadVoices; }
 $("#voice").onchange = e => store.set("voice", e.target.value);
 $("#rate").value = store.get("rate", 1);
-$("#rate").oninput = e => store.set("rate", +e.target.value);
+$("#rate").oninput = e => { store.set("rate", +e.target.value); player.defaultPlaybackRate = player.playbackRate = +e.target.value; };
 
 function speakable(t){
   return String(t)
@@ -135,7 +135,31 @@ function speakable(t){
     .replace(/[≥]/g," at least ").replace(/[≤]/g," at most ").replace(/~/g,"about ")
     .replace(/→|->/g," then ").replace(/\+\/-/g," with or without ");
 }
+// Recorded clips play as media, so iOS sends them to CarPlay and Bluetooth like music.
+// The browser voice does not reliably follow the car's audio, so it is only a fallback.
+// Each clip is named by a hash of the text it reads (tools/make_audio.py), so an edited card falls back until re-rendered.
+const player = new Audio();
+player.preload = "auto";
+player.defaultPlaybackRate = player.playbackRate = store.get("rate", 1);
+let clips = new Set();
+fetch("audio/index.json").then(r => r.ok ? r.json() : []).then(l => { clips = new Set(l); }).catch(() => {});
+function fnv1a(s){ let h = 0x811c9dc5; for(const b of new TextEncoder().encode(s)){ h ^= b; h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(16).padStart(8, "0"); }
+player.onplaying = () => $("#readBtn").classList.add("speaking");
+player.onpause = player.onended = () => $("#readBtn").classList.remove("speaking");
+function stopAll(){ if(synth) synth.cancel(); player.pause(); }
 function speak(text){
+  stopAll();
+  const h = fnv1a(text);
+  if(clips.has(h)){
+    player.onerror = () => tts(text);
+    player.src = "audio/" + h + ".mp3";
+    player.playbackRate = +$("#rate").value || 1;
+    player.play().catch(() => tts(text));
+    return;
+  }
+  tts(text);
+}
+function tts(text){
   if(!synth) return;
   synth.cancel();
   const u = new SpeechSynthesisUtterance(speakable(text));
@@ -168,7 +192,7 @@ $("#topic").onchange = e => { topic = e.target.value; store.set("topic", topic);
 // ---- cards ----
 function shuffle(a){ for(let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function next(){
-  if(synth) synth.cancel();
+  stopAll();
   const p = pool();
   if(!p.length){ cur = null; render(); return; }
   if(!deck.length){ deck = shuffle(p.map(q => q.id)); if(cur && deck.length > 1 && deck[deck.length-1] === cur.id) deck.unshift(deck.pop()); }
@@ -207,14 +231,27 @@ function render(){
   $("#readBtn").textContent = stage === 0 ? "Read question" : stage === 1 ? "Read answer" : "Read answer again";
   const f = !!flags[cur.id];
   $("#flagBtn").setAttribute("aria-pressed", f); $("#flagBtn").textContent = f ? "Flagged" : "Flag";
+  if("mediaSession" in navigator && window.MediaMetadata)
+    navigator.mediaSession.metadata = new MediaMetadata({ title: cur.question, artist: cur.site + (stage === 2 ? " · answer" : " · question"), album: "Boards Flashcards",
+      artwork: [{ src: "icon-512.png", sizes: "512x512", type: "image/png" }] });
 }
-$("#readBtn").onclick = () => {
+function read(){
   if(!cur) return;
   if(stage === 0){ stage = 1; speak((cur.case ? cur.case + " ... " : "") + cur.question); }
   else { stage = 2; speak(cur.answer); }
   render();
-};
+}
+$("#readBtn").onclick = read;
 $("#nextBtn").onclick = next;
+
+// Car and headphone buttons: play reads the next part (question, then answer), next track moves on and reads the new question, previous track repeats.
+if("mediaSession" in navigator){
+  const ms = navigator.mediaSession, on = (a, f) => { try{ ms.setActionHandler(a, f); }catch(e){} };
+  on("play", () => { if(player.src && player.paused && !player.ended && player.currentTime > 0) player.play(); else read(); });
+  on("pause", () => player.pause());
+  on("nexttrack", () => { next(); read(); });
+  on("previoustrack", () => { if(player.src){ player.currentTime = 0; player.play(); } });
+}
 $("#flagBtn").onclick = () => {
   if(!cur) return;
   if(flags[cur.id]) delete flags[cur.id]; else flags[cur.id] = Date.now();
